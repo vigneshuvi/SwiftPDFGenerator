@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" http-equiv="content-type">
+            <title>A simple, clean, and responsive HTML invoice template</title>
+            <style>
+                .PDFBody {
+                    max-width: 800px;
+                    margin: auto;
+                    padding: 30px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+                    color:#555;
+                }
+            .PDFBody table {
+                width: 100%;
+                line-height: inherit;
+                text-align: left;
+            }
+            .PDFBody table td {
+                padding: 5px;
+                vertical-align: top;
+            }
+            .PDFBody table tr td.age {
+                text-align: right;
+            }
+            .PDFBody table tr td.GeneratedDate {
+                text-align: right;
+            }
+            .PDFBody table tr.top table td {
+                padding-bottom: 20px;
+            }
+            .PDFBody table tr.top table td.title {
+                font-size: 45px;
+                line-height: 45px;
+                color: #333;
+            }
+            .PDFBody table tr.information table td {
+                padding-bottom: 40px;
+            }
+            .PDFBody table tr th {
+                background: #eee;
+                border-bottom: 1px solid #ddd;
+                font-weight: bold;
+                text-align: center;
+            }
+            .PDFBody table tr.heading td {
+                background: #eee;
+                border-bottom: 1px solid #ddd;
+                font-weight: bold;
+            }
+            .PDFBody table tr.details td {
+                padding-bottom: 20px;
+            }
+            .PDFBody table tr.item td {
+                border-bottom: 1px solid #eee;
+            }
+            .PDFBody table tr.item.last td {
+                border-bottom: none;
+            }
+            .PDFBody table tr.total td.age {
+                border-top: 2px solid #eee;
+                font-weight: bold;
+            }
+            @media only screen and (max-width: 600px) {
+                .PDFBody table tr.top table td {
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                }
+                .PDFBody table tr.information table td {
+                    width: 100%;
+                    display: block;
+                    text-align: center;
+                }
+            }
+            
+                </style>
+            </head>
+    
+    <body>
+            <div class="PDFBody">
+                <table cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr class="top">
+                            <td colspan="2">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td class="title"> <img src="http://news.qburst.com/images/responsive/QBlogo.png" style=\ "width:100%; max-width:300px; background-color: #cdcdcd\"> </td>
+                                            <td class="GeneratedDate">
+                                                Date
+                                                <br> Feb 28, 2017
+                                                <br> </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </table>
+                <table style="width:100%;border-bottom:1px solid #ddd">
+                    
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td class="age">50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td class="age">94</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td class="age">80</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                            <br/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Signature</td>
+                    </tr>
+                </table>
+            </div>
+            </body>
+</html>
